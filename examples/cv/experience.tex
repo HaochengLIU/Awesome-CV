@@ -17,40 +17,50 @@
     {Jun. 2016 - Now} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Simulation Modeling ToolKit and Computational Model Builder framework}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Simulation Modeling ToolKit and Computational Model Builder framework}
           \begin{itemize}
-              \item {B}
-              \item {C}
+              \item {Architected a reactor modeling tool kit which provideded a front end UI to design and visualize complicated model via Qt and GPU glyphing, adding C++ python binding support and ability to launch parallel meshing jobs with Cubit}
+              \item {Created a meteorological geo-data browser which allow users to fetch data asynchronizally from remote servers and analyze them on real world map via OpenStreetMap RESTful API and MVVM design pattern}
+              \item {Implemented data I\/O serialization via nlohmann\_json and several geometry deformation algorithms such as terrain extraction, bathemetry, etc}
+              \item {Created a singleton model manager which bridged the modeling server and visualization client\\}
           \end{itemize}
-        \item {Scientific visualization algorithms for Massively Threaded Architectures toolkit(VTK-m)}
-        \item {Adaptable Input Output System Version 2(ADIOS2)}
-        \begin{itemize}
-            \item {Parallelized the engine tests(BP, HDF5, ADIOS1, etc) and binding tests(Python, Fortran)}
-            \item {Extended FindGoogleTesting CMake module so that it can launch MPI tests and provide a better CMake integration}
-        \end{itemize}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Scientific visualization algorithms for Massively Threaded Architectures toolkit(VTK-m)}
+          \begin{itemize}
+              \item {Implemented a bunch of parallel scientific algorithms(split shape edge, probe, etc) and improved the shared memory support for CUDA and runtime selection for TBB and OpenMP}
+              \item {Simplified the testing infrastructure which is capable of parsing runtime arguments and saving runtime overheads by CRTP pattern and generic programming. It reduced the binary size by 80\% and improved 40\% of runtime performance}
+              \item {Refactored the code base with C++11 features which simplified meta programming, improving runtime overhead as well as adding a reliable random number generation and prepare for C++14 migration}
+               % thread_local
+              \item {Added an address sanitizer nightly build which automatically reported memory errors to a remote dashboard\\}
+          \end{itemize}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Adaptable Input Output System Version 2(ADIOS2)}
+          \begin{itemize}
+              \item {Implemented a parallel data reader which could distribute and balance loads among many processes and visualize streaming data, in-situ data in large scale}
+              \item {Parallelized the engine tests(BP, HDF5, ADIOS1, etc) and binding tests(Python, Fortran)}
+              \item {Extended FindGoogleTesting CMake module so that it can launch MPI tests and provide a better CMake integration}
+          \end{itemize}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
-  \cventry
-    {Research Assistant} % Job title
-    {Visual Engineer and Enginnering Lab@CMU} % Organization
-    {Pittsburgh, PA} % Location
-    {Dec. 2014 - May. 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Human Tumor Deformation Prediction - A NIH funded project}
-        \begin{itemize}
-          \item {Based on fiducial marker info, make a prediction on tumor global deformation via Ansys APDL, Matlab to help surgeons improve operation accuracy}
-          \item {Built a software based on OpenFlipper, TetGen and optimization packages to enable I/O, tetrahedron volume mesh generation and visualization for medical usages}
-        \end{itemize}
+%  \cventry
+%    {Research Assistant} % Job title
+%    {Visual Engineer and Enginnering Lab@CMU} % Organization
+%    {Pittsburgh, PA} % Location
+%    {Dec. 2014 - May. 2016} % Date(s)
+%    {
+%      \begin{cvitems} % Description(s) of tasks/responsibilities
+%        \item {Human Tumor Deformation Prediction - A NIH funded project}
+%        \begin{itemize}
+%          \item {Based on fiducial marker info, make a prediction on tumor global deformation via Ansys APDL, Matlab to help surgeons improve operation accuracy}
+%          \item {Built a software based on OpenFlipper, TetGen and optimization packages to enable I/O, tetrahedron volume mesh generation and visualization for medical usages}
+%        \end{itemize}
 %        \item {Design for 3D Printing through Spatial partitioning and Assembly for large models}
 %        \begin{itemize}
 %          \item {Constructed a beam search based framework to automatically partition the surface mesh model and output the segmented parts}
 %          \item {Utilized PCA to segment the model and optimized overall 3D printing time up to 40\%}
 %        \end{itemize}
-      \end{cvitems}
-    }
+%      \end{cvitems}
+%    }
 
 %---------------------------------------------------------
 \end{cventries}
