@@ -17,26 +17,27 @@
     {Jun. 2016 - Now} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Simulation Modeling ToolKit and Computational Model Builder framework}
-          \begin{itemize}
-              \item {Architected a reactor modeling tool kit which provideded a front end UI to design and visualize complicated model via Qt and GPU glyphing, adding C++ python binding support and ability to launch parallel meshing jobs with Cubit}
-              \item {Created a meteorological geo-data browser which allow users to fetch data asynchronizally from remote servers and analyze them on real world map via OpenStreetMap RESTful API and MVVM design pattern}
-              \item {Implemented data I\/O serialization via nlohmann\_json and several geometry deformation algorithms such as terrain extraction, bathemetry, etc}
-              \item {Created a singleton model manager which bridged the modeling server and visualization client\\}
-          \end{itemize}
         \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Scientific visualization algorithms for Massively Threaded Architectures toolkit(VTK-m)}
           \begin{itemize}
-              \item {Implemented a bunch of parallel scientific algorithms(split shape edge, probe, etc) and improved the shared memory support for CUDA and runtime selection for TBB and OpenMP}
-              \item {Simplified the testing infrastructure which is capable of parsing runtime arguments and saving runtime overheads by CRTP pattern and generic programming. It reduced the binary size by 80\% and improved 40\% of runtime performance}
+              \item {Implemented a bunch of parallel scientific algorithms(split shape edge, probe, histogram, etc) and improved the shared memory support for CUDA and runtime selection for TBB and OpenMP}
+              \item {Simplified and optimized the testing infrastructure which now is capable of parsing runtime arguments and saving runtime overheads by CRTP pattern and generic programming. It reduced the binary size by 80\% and improved 40\% of runtime performance}
               \item {Refactored the code base with C++11 features which simplified meta programming, improving runtime overhead as well as adding a reliable random number generation and prepare for C++14 migration}
                % thread_local
-              \item {Added an address sanitizer nightly build which automatically reported memory errors to a remote dashboard\\}
+              \item {Added an address sanitizer nightly build and automated the uploading process to a remote nightly dashboard which catches more than 30 legacy bugs}
           \end{itemize}
         \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Adaptable Input Output System Version 2(ADIOS2)}
           \begin{itemize}
-              \item {Implemented a parallel data reader which could distribute and balance loads among many processes and visualize streaming data, in-situ data in large scale}
-              \item {Parallelized the engine tests(BP, HDF5, ADIOS1, etc) and binding tests(Python, Fortran)}
+              % zero-copy model
+            \item {Implemented a parallel data reader which could distribute and balance loads among many processes and visualize streaming data, in-situ data in large scale(GB). It's capable of generating unstructured grid, uniform grid, polydata and volume data}
+              \item {Parallelized the engine tests(BP, HDF5, ADIOS1, etc) and binding tests(Python, Fortran), tested on hundreds of processor cores}
               \item {Extended FindGoogleTesting CMake module so that it can launch MPI tests and provide a better CMake integration}
+          \end{itemize}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Simulation Modeling ToolKit and Computational Model Builder framework}
+          \begin{itemize}
+              \item {Architected a reactor modeling tool kit which provideded a front end UI to design and visualize complicated model via Qt and GPU glyphing, adding C++11 python binding support and ability to launch parallel meshing jobs via a thread pool with commerical meshing libraries}
+              \item {Created a meteorological geo-data browser which allow users to fetch data asynchronizally from remote servers and analyze them on real world map via OpenStreetMap RESTful API and MVVM design pattern}
+              \item {Implemented several geometric deformation algorithms such as terrain extraction, bathemetry, warp, etc and data I\/O serialization via nlohmann\_json}
+              \item {Created a singleton model manager which bridged the modeling server and visualization client}
           \end{itemize}
       \end{cvitems}
     }
