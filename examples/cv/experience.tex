@@ -9,174 +9,90 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-%---------------------------------------------------------
-  \cventry
-    {Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Present} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
-    {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May 2018} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Researcher} % Job title
-    {Undergraduate Research, Machine Learning Lab(Prof. Seungjin Choi)} % Organization
-    {Pohang, S.Korea} % Location
-    {Mar. 2016 - Exp. Jun. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched classification algorithms(SVM, CNN) to improve accuracy of human exercise recognition with wearable device.}
-        \item {Developed two TIZEN applications to collect sample data set and to recognize user exercise on SAMSUNG Gear S.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-        \item {Implemented a distributed web stress test tool with high anonymity.}
-        \item {Implemented a military cooperation system which is web based real time messenger in Scala on Lift.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Game Developer Intern at Global Internship Program} % Job title
-    {NEXON} % Organization
-    {Seoul, S.Korea \& LA, U.S.A} % Location
-    {Jan. 2013 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed in Cocos2d-x an action puzzle game(Dragon Buster) targeting U.S. market.}
-        \item {Implemented API server which is communicating with game client and In-App Store, along with two other team members who wrote the game logic and designed game graphics.}
-        \item {Won the 2nd prize in final evaluation.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Researcher for <Detecting video’s torrents using image similarity algorithms>} % Job title
-    {Undergraduate Research, Computer Vision Lab(Prof. Bohyung Han)} % Organization
-    {Pohang, S.Korea} % Location
-    {Sep. 2012 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched means of retrieving a corresponding video based on image contents using image similarity algorithm.}
-        \item {Implemented prototype that users can obtain torrent magnet links of corresponding video relevant to an image on web site.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer Trainee} % Job title
-    {Software Maestro (funded by Korea Ministry of Knowledge and Economy)} % Organization
-    {Seoul, S.Korea} % Location
-    {Jul. 2012 - Jun. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Performed research memory management strategies of OS and implemented in Python an interactive simulator for Linux kernel memory management.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
+% %---------------------------------------------------------
   \cventry
     {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
+    {Two Sigma Investment LP} % Organization
+    {New York, NY} % Location
+    {Dec. 2019 - Now} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer. Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Streaming and enabling cloud capability for researching tick level market data}
+          \begin{itemize}
+              \item {Empowered the team to generate research market data as hive partitioning parquet in live with automated code generation and Acero execution planing for >100 feeds, adding up to hundres of terabytes daily.}
+              \item {Migrated research market data from a bespoke format to open source columnar data representation format Parquet, improving simulation speed use cases by 10x.}
+              \item {Enabled interative python researching on tick level market data via python bindings on C++ API as well as Apache execution engine, bridging Big table and Big Query through avro.}
+              \item {Built a generic C++ adapter for few hundreds market data readers and added python binding support.}
+          \end{itemize}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} Low latency martet data platform development and maintainence}
+          \begin{itemize}
+              \item {Lead a team of 4 engineers to expand company trading porfolio to Aisa, onboarding 6 direct feeds and backfill decades of research data.}
+              \item {Parsed real time, high-volume marketa data feeds from major stock exchanges all over the world, owner of future, FX, as well as asian equity feeds.}
+              \item {Redesigned fault tolerant tickerplant health reporting which addresses few sev0 incidents and roll it out across more than 100 feeds.}
+              \item {Add real time measurement to ISO order compliance framework via prometheus \&\& Grafana and roll out to production without disruption to partners.}
+              \item {Modernalized the company C++ development toolchain by migrating bespoke build system to CMake, enabling static analysis build and onboarding new users.}
+          \end{itemize}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Intraday market data platform modernalization}
+          \begin{itemize}
+              \item {Built a platform to support T+0 and T+1 use cases, visualizations, ad hoc queries at market data scale for all assert classes.}
+              \item {Collaborated with engineering partners to meet performance, auto failover, high availability goals of existing customers for criitical trading and modeling workloads.}
+              \item {Paired with cloud and solution vendors to migrate on-premises solutions to cloud, providing autoscaling of instances for scaling of new datasets and surges in queries.}
+          \end{itemize}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+  \cventry
+    {R\&D Engineer} % Job title
+    {Kitware Inc.} % Organization
+    {Clifton Park, NY} % Location
+    {Jun. 2016 - Dec. 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Scientific multi-threading algorithms for Massively Threaded Architectures toolkit(VTK-m)}
+          \begin{itemize}
+              \item {Implemented a bunch of parallel scientific algorithms(probe, histogram, etc) and improved the shared memory support for CUDA and runtime selection for TBB and OpenMP}
+              \item {Simplified and optimized the testing infrastructure which saved runtime overheads by CRTP pattern and generic programming. It reduced the binary size by 80\% and improved 40\% of runtime performance}
+              \item {Refactored the code base with C++11 features which simplified meta programming, improving runtime overhead as well as adding a reliable random number generation and prepare for C++14 migration}
+               % thread_local
+              % \item {Added an address sanitizer nightly build and automated the uploading process to a remote nightly dashboard which catches more than 30 legacy bugs}
+          \end{itemize}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Adaptable Input Output System Version 2(ADIOS2)}
+          \begin{itemize}
+              % zero-copy model
+            \item {Implemented a parallel data reader which could distribute and balance loads among many processes and visualize streaming data, in-situ data in large scale. It's capable of generating unstructured grid, uniform grid, polydata and volume data}
+              \item {Parallelized the engine tests(BP, HDF5, ADIOS1, etc) and binding tests(Python, Fortran), tested on hundreds of processor cores}
+              \item {Extended FindGoogleTesting CMake module so that it can launch MPI tests and provide a better CMake integration}
+          \end{itemize}
+        % \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Simulation Modeling ToolKit and Computational Model Builder framework}
+        %   \begin{itemize}
+        %       \item {Architected a simulation tool kit which provideded a front end UI to design and visualize complicated model via Qt and GPU glyphing, adding C++11 python binding support and ability to launch parallel meshing jobs via a thread pool with commerical meshing libraries}
+        %       \item {Created a meteorological geo-data browser which allow users to fetch data asynchronizally from remote servers and analyze them on real world map via OpenStreetMap RESTful API and MVC design pattern}
+        %       \item {Profiled the existing framework and redesigned its data I\/O serialization via nlohmann\_json which improved the performance by 20\%}
+        %       \item {Created a singleton model manager which bridged the modeling server and visualization client}
+          % \end{itemize}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
-  \cventry
-    {Freelance Penetration Tester} % Job title
-    {SAMSUNG Electronics} % Organization
-    {S.Korea} % Location
-    {Sep. 2013, Mar. 2011 - Oct. 2011} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Conducted penetration testing on SAMSUNG KNOX, which is solution for enterprise mobile security.}
-        \item {Conducted penetration testing on SAMSUNG Smart TV.}
-      \end{cvitems}
-      %\begin{cvsubentries}
-      %  \cvsubentry{}{KNOX(Solution for Enterprise Mobile Security) Penetration Testing}{Sep. 2013}{}
-      %  \cvsubentry{}{Smart TV Penetration Testing}{Mar. 2011 - Oct. 2011}{}
-      %\end{cvsubentries}
-    }
+%  \cventry
+%    {Research Assistant} % Job title
+%    {Visual Engineer and Enginnering Lab@CMU} % Organization
+%    {Pittsburgh, PA} % Location
+%    {Dec. 2014 - May. 2016} % Date(s)
+%    {
+%      \begin{cvitems} % Description(s) of tasks/responsibilities
+%        \item {Human Tumor Deformation Prediction - A NIH funded project}
+%        \begin{itemize}
+%          \item {Based on fiducial marker info, make a prediction on tumor global deformation via Ansys APDL, Matlab to help surgeons improve operation accuracy}
+%          \item {Built a software based on OpenFlipper, TetGen and optimization packages to enable I/O, tetrahedron volume mesh generation and visualization for medical usages}
+%        \end{itemize}
+%        \item {Design for 3D Printing through Spatial partitioning and Assembly for large models}
+%        \begin{itemize}
+%          \item {Constructed a beam search based framework to automatically partition the surface mesh model and output the segmented parts}
+%          \item {Utilized PCA to segment the model and optimized overall 3D printing time up to 40\%}
+%        \end{itemize}
+%      \end{cvitems}
+%    }
 
 %---------------------------------------------------------
 \end{cventries}
