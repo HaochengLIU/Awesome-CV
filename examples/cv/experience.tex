@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Experience}
+\cvsection{Work Experience}
 
 
 %-------------------------------------------------------------------------------
@@ -11,34 +11,41 @@
 
 % %---------------------------------------------------------
   \cventry
-    {Software Engineer} % Job title
+    {Senior Software Engineer in Market Data Platform Engineering} % Job title
     {Two Sigma Investment LP} % Organization
     {New York, NY} % Location
     {Dec. 2019 - Now} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}A Data Lake of tick level market data for analytics and research}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Tech Lead - Architected a Performant and Scalable Market Data Platform for Research and Analytics}
           \begin{itemize}
-              \item {Empowered the team to generate research market data as hive partitioning parquet in live with automated code generation and Acero execution planing for >100 feeds, adding up to hundres of terabytes daily.}
-              \item {Migrated research market data from a bespoke format to open source columnar data representation format Parquet, improving simulation speed use cases by 10x.}
-              \item {Enabled interative python researching on tick level market data via python bindings on C++ API as well as Apache execution engine, bridging Big table and Big Query through avro.}
-              \item {Built a generic C++ adapter for few hundreds market data readers and added python binding support.}
+              \item {Leading a team of 2 engineers on a multi-year initiative to develop an open-standard, cloud-native platform handling 200+ TB of data daily and serving 200+ diverse users, hosting several petaBytes of ever-growing data.}
+              \item {Architected a high performance data processing framework in C++ with Apache Arrow and multi-threading, serving users with varying endpoint and latency requirements, handling 2000+ market data feed variations in a hybrid machine environment, reducing in compute and storage cost by \~50\%.}
+              \item {Designed a complete and sustainable integration with proprietary modeling platform, BigQuery via Terraform and Apache Iceberg via external commit, coordinating efforts across multiple cross-functional engineering and research teams.}
+              \item {Driving the user onboarding across organizations, working with partner teams to resolve tens of millions of PnL discrepancies, launching new fast trading models across regions, and saving compute costs in key pipelines by up to 90\%.}
+              \item {Debugged abnormal memory usage and S3 authentication issues, Optimized query performance, achieving >5x with ad-hoc intraday queries and >100x with large queries spanning months of data and contributing features and patches to Apache Arrow.}
           \end{itemize}
-        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} Low latency martet data platform development and maintainence}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Tech Lead - Onboarded a Conversational Intraday Microstructure Market Data Analytics System}
           \begin{itemize}
-              \item {Lead a team of 4 engineers to expand company trading porfolio to Aisa, onboarding 6 direct feeds and backfill decades of research data.}
-              \item {Parsed real time, high-volume marketa data feeds from major stock exchanges all over the world, owner of future, FX, as well as asian equity feeds.}
-              \item {Redesigned fault tolerant tickerplant health reporting which addresses few sev0 incidents and roll it out across more than 100 feeds.}
-              \item {Add real time measurement to ISO order compliance framework via prometheus \&\& Grafana and roll out to production without disruption to partners.}
-              \item {Modernalized the company C++ development toolchain by migrating bespoke build system to CMake, enabling static analysis build and onboarding new users.}
+            \item {Independently evaluated offerings from eight vendors to close the gap on serving streaming, micro market data structure feature generation for low latency trading and data governance for the firm.}
+            \item {Designed evaluation criteria, conducted rounds of internal and external interviews, performed proof of concepts with vendors, cloud and security teams and wrote a detailed report which guided the senior management to onboard the selected vendor.}
+            \item {Onboarding the chosen vendor offering to existing platform supporting all US depth of book feeds and future exchanges.}
           \end{itemize}
-        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Intraday market data platform modernalization}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} Maintained and Enhanced High-Throughput, Low-Latency Market Data Platform}
           \begin{itemize}
-              \item {Built a platform to support T+0 and T+1 use cases, visualizations, ad hoc queries at market data scale for all assert classes.}
-              \item {Collaborated with engineering partners to meet performance, auto failover, high availability goals of existing customers for criitical trading and modeling workloads.}
-              \item {Paired with cloud and solution vendors to migrate on-premises solutions to cloud, providing autoscaling of instances for scaling of new datasets and surges in queries.}
+              \item {Led a team of 3 engineers to expand companyi's trading porfolio to Asia, onboarding 6 direct feeds and backfill decades of research data, launching new trading tactics.}
+              \item {Developed a generic C++ framework and corresponding Python bindings to historical all market data in a proprietary format, leveraging std::variant, templates and Pybind11, unlocking new research opportunities for modelers.}
+              \item {Implemented real time, low latency market data feeds in C/C++ from major stock exchanges all over the world, leveraging various optimization techiniques in C++ and OS.}
+              \item {Redesigned fault-tolerant tickerplant health reporting, contibuting to the new market data monitoring and metrics system on top of Prometheus and Grafana.}
+          \end{itemize}
+      \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Community and Culture}
+          \begin{itemize}
+            \item {Modernized the company C++ development toolchain by migrating a bespoke build system to industry open standard toolchain CMake.}
+            \item {led the GCC 13 compiler upgrade for the firm, upgrading 80+ codebases, certifing ~500 codebases across multiple orgs.}
+            \item {Presented work at organization townhall, company wide technique sharing session and teaching classes on "Market data for research".}
           \end{itemize}
       \end{cvitems}
+      \vspace{0.3cm}
     }
 %---------------------------------------------------------
   \cventry
@@ -50,27 +57,28 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Scientific multi-threading algorithms for Massively Threaded Architectures toolkit(VTK-m)}
           \begin{itemize}
-              \item {Implemented a bunch of parallel scientific algorithms(probe, histogram, etc) and improved the shared memory support for CUDA and runtime selection for TBB and OpenMP}
-              \item {Simplified and optimized the testing infrastructure which saved runtime overheads by CRTP pattern and generic programming. It reduced the binary size by 80\% and improved 40\% of runtime performance}
+              \item {Simplified and optimized the infrastructure which saved runtime overheads by CRTP pattern and generic programming. It reduced the binary size by 80\% and improved 40\% of runtime performance}
+              % \item {Implemented a bunch of parallel scientific algorithms(probe, histogram, etc) and improved the shared memory support for CUDA and runtime selection for TBB and OpenMP}
               \item {Refactored the code base with C++11 features which simplified meta programming, improving runtime overhead as well as adding a reliable random number generation and prepare for C++14 migration}
                % thread_local
               % \item {Added an address sanitizer nightly build and automated the uploading process to a remote nightly dashboard which catches more than 30 legacy bugs}
           \end{itemize}
-        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Adaptable Input Output System Version 2(ADIOS2)}
-          \begin{itemize}
-              % zero-copy model
-            \item {Implemented a parallel data reader which could distribute and balance loads among many processes and visualize streaming data, in-situ data in large scale. It's capable of generating unstructured grid, uniform grid, polydata and volume data}
-              \item {Parallelized the engine tests(BP, HDF5, ADIOS1, etc) and binding tests(Python, Fortran), tested on hundreds of processor cores}
-              \item {Extended FindGoogleTesting CMake module so that it can launch MPI tests and provide a better CMake integration}
-          \end{itemize}
-        % \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Simulation Modeling ToolKit and Computational Model Builder framework}
+        % \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Adaptable Input Output System Version 2(ADIOS2)}
         %   \begin{itemize}
-        %       \item {Architected a simulation tool kit which provideded a front end UI to design and visualize complicated model via Qt and GPU glyphing, adding C++11 python binding support and ability to launch parallel meshing jobs via a thread pool with commerical meshing libraries}
+        %       % zero-copy model
+        %     \item {Implemented a parallel data reader which could distribute and balance loads among many processes and visualize streaming data, in-situ data in large scale. It's capable of generating unstructured grid, uniform grid, polydata and volume data}
+        %       \item {Parallelized the engine tests(BP, HDF5, ADIOS1, etc) and binding tests(Python, Fortran), tested on hundreds of processor cores}
+        %       \item {Extended FindGoogleTesting CMake module so that it can launch MPI tests and provide a better CMake integration}
+        %   \end{itemize}
+        \item {\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext}Simulation Modeling ToolKit and Computational Model Builder framework}
+          \begin{itemize}
+              \item {Architected a simulation tool kit which provideded a front end UI to design and visualize complicated model via Qt and GPU glyphing, adding C++11 python binding support and ability to launch parallel meshing jobs via a thread pool with commerical meshing libraries}
         %       \item {Created a meteorological geo-data browser which allow users to fetch data asynchronizally from remote servers and analyze them on real world map via OpenStreetMap RESTful API and MVC design pattern}
         %       \item {Profiled the existing framework and redesigned its data I\/O serialization via nlohmann\_json which improved the performance by 20\%}
         %       \item {Created a singleton model manager which bridged the modeling server and visualization client}
-          % \end{itemize}
+          \end{itemize}
       \end{cvitems}
+      \vspace{0.3cm}
     }
 
 %---------------------------------------------------------
